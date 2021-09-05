@@ -140,6 +140,7 @@
     justify-content: space-between;
 }
 .product__card {
+    position: relative;
     background-color: #F8F8F8;
     max-width: 360px;
     display: flex;
@@ -172,6 +173,28 @@
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
+}
+.card__hover {
+    position: absolute;
+    padding: 184px 110px;
+    background: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    transition: 0.5s;
+}
+.card__hover:hover {
+    opacity: 1;
+}
+.card__hover_btn {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    background: transparent;
 }
 .products__button {
     margin-top: 18px;
@@ -218,10 +241,8 @@
 }
 .subscribe {
     background-image: url(../img/subscribe-bg.png);
-    height: 448px;
 }
 .subscribe__opacity {
-    height: 448px;
     background-color: rgba(244, 244, 244, 0.7);
 }
 .subscribe__wrap {
