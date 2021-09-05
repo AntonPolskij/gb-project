@@ -266,7 +266,27 @@
     color: #FBFBFB;
     font-size: 16px;
     line-height: 19px;
-
+}
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+.socials__link:not(:last-child) {
+    margin-right: 8px;
+}
+.socials__link {
+    text-decoration: none;
+    padding: 9px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+.socials__link:hover {
+    background-color: #F16D7F;
+    fill: #FFFFFF;
 }
 .footer__wrap {
     padding-top: 24px;
