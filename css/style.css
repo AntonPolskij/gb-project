@@ -184,6 +184,10 @@
     border: 1px solid #FF6A6A;
     background-color: #FFFFFF;
 }
+.products__button:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+}
 .features {
     background-color: #222224;
 }
