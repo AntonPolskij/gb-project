@@ -388,7 +388,7 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-.products__catalog {
+.products__catalog-page {
     margin-top: 0px;
 }
 .catalog__filters {
@@ -445,4 +445,101 @@
 }
 .catalog__pages__link:hover {
     color: #EF5B70;
+}
+.product__slider {
+    background-color:#F7F7F7;
+    border:1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product__slider__image {
+    max-width: 600px;
+    width: 100%;
+    padding-bottom: 65px;
+}
+.slider__button {
+    padding: 13px 17px;
+    background-color: #E5E5E5;
+    border: none;
+}
+.slider__button:hover {
+    fill: #F16D7F;
+}
+.product__cards__product-page {
+    margin-bottom: 98px;
+    margin-top: 128px;
+}
+.product__card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E5E5E5;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-top: -65px;
+    background-color: #FFFFFF;
+}
+.product__card2__heading {
+    color: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+}
+.product__card2__info {
+    text-align: center;
+    border-bottom: 1px solid #EAEAEA;
+    max-width: 641px;
+    padding-bottom: 65px;
+    padding-top: 12px;
+}
+.product__card2__info__heading {
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+.product__card2__info__text {
+    max-width: 528px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E;
+    margin-bottom: 32px;
+}
+.product__card2__price {
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+.product__card2__sort {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+.product__card2__sort p:not(:last-child) {
+    margin-right: 23px;
+}
+.product__card2__sort p::after {
+    margin-left: 9px;
+   content: url(../img/sort-icon.svg);
+}
+.product__card2__btn  button{
+    fill: #F26376;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    color: #F26376;
+    background-color: transparent;
+    padding: 10px 50px 10px 25px
+}
+.product__card2__btn  button:hover {
+    background-color: #F16D7F;
+    fill: #FFFFFF;
+    color: #FFFFFF;
 }
