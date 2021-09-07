@@ -463,11 +463,12 @@ a {
           align-items: center;
   width: 32px;
   height: 32px;
+  color: #000000;
 }
 
 .socials__link:hover {
   background-color: #F16D7F;
-  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .footer__wrap {
