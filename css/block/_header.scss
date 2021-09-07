@@ -1,0 +1,18 @@
+.header {
+    background-color: #222222;
+    padding: 19px 0;
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__one a:not(:last-child) {
+        margin-right: 41px;
+        text-decoration: none;
+    }
+    &__two a {
+        fill: #FFFFFF;
+    }
+    &__two a:not(:last-child) {
+        margin-right: 33px;
+    }
+}
