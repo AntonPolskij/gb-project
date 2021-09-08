@@ -10,17 +10,11 @@
     padding: 0 10px;
     margin: 0 auto;
 }
-@mixin center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@import "block/vars";
-
 a {
     text-decoration: none;
 }
+@import "block/vars";
+
 @import "block/header";
 
 @import "block/intro";
@@ -130,151 +124,47 @@ a {
 }
 @import "block/features";
 
-.subscribe {
-    background-image: url(../img/subscribe-bg.png);
-}
-.subscribe__opacity {
-    background-color: rgba(244, 244, 244, 0.7);
-}
-.subscribe__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.subscribe__one {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 359.24px;
-    padding-top: 97px;
-    padding-bottom: 126px;
-}
-.subscribe__comment {
-    margin-top: 30px;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222224;
-}
-.subscribe__two {
-    max-width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.subscribe__text {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    color:#222224;
-}
-.subscribe__decor {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
-    color:rgba(34, 34, 36, 1); 
-}
-.footer {
-    background-color: #222224;
-}
-.copy__text {
-    color: #FBFBFB;
-    font-size: 16px;
-    line-height: 19px;
-}
-.socials {
-    display: flex;
-    justify-content: space-between;
-}
-.socials__link:not(:last-child) {
-    margin-right: 8px;
-}
-.socials__link {
-    text-decoration: none;
-    padding: 9px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    color: #000000;
-}
-.socials__link:hover {
-    background-color: #F16D7F;
-    color:#FFFFFF;
-}
-.footer__wrap {
-    padding-top: 24px;
-    padding-bottom: 23px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.subscribe__form {
-    margin-top: 32px;
-    display: flex;
-    justify-content: center;
-}
-.email-input {
-    max-width: 259px;
-    background-color: #E1E1E1;
-    padding: 14px 22px;
-    border-radius: 30px 0 0 30px;
-    border: none;
-}
-.email-input::placeholder {
-    font-size: 14px;
-    line-height: 17px;
-    color: #222224;
-    opacity: 0.67;
-}
-.email-input:focus {
-    outline: none;
-}
-.email__button {
-    padding: 14px 21px;
-    border-color: transparent;
-    border-radius: 0 30px 30px 0;
-    background-color: #F16D7F;
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 17px
-}
-.catalog__header {
-    background: #F8F3F4;
-}
-.catalog__header__wrap {
-    padding-top: 66px;
-    padding-bottom: 66px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.catalog__heading {
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-}
-.catalog__menu__list {
-    display: flex;
-    list-style: none;
-    font-size: 14px;
-    line-height: 17px;
-}
-.catalog__menu__item__link {
-    text-decoration: none;
-    color: #636363;
-}
-.catalog__menu__item__link:hover {
-    color:#F16D7F;
-}
-.catalog__menu__item:not(:last-child)::after {
-    content: "/";
-    padding-left: 5px;
-    padding-right: 5px;
-}
+@import "block/subscribe";
+
+@import "block/footer";
+
+.section-header {
+    background-color: #F8F3F4;
+    &__wrap {
+        padding-top: 66px;
+        padding-bottom: 66px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h2 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $main-color;
+    }
+    }
+.catalog-menu {
+        &__list {
+            display: flex;
+            list-style: none;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__item a {
+            color: #636363;
+        }
+        &__item a:hover {
+            color: $main-color;
+        }
+        &__item:not(:last-child)::after {
+            content: "/";
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+
 .products__catalog-page {
     margin-top: 0px;
 }
