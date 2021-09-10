@@ -597,53 +597,103 @@ a {
   margin-top: 0px;
 }
 
-.catalog__filters {
-  margin-top: 51px;
-  margin-bottom: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.filtres {
   -ms-flex-item-align: normal;
       align-self: normal;
-}
-
-.catalog__sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 304px;
 }
 
-.catalog__filter__heading {
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
+.filter {
+  position: relative;
+  margin: 51px 0 64px 18px;
+  max-width: 360px;
+  width: 100%;
 }
 
-.catalog__filter__heading::before {
-  margin-right: 12px;
-  content: "Filter";
-}
-
-.catalog__sort__heading {
-  display: block;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
-}
-
-.catalog__sort__heading::after {
-  margin: 0 10px 0 10px;
-  content: url("../img/sort-icon.svg");
-}
-
-.sort-size__list {
+.filter__heading {
   list-style: none;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.filter__heading:hover {
+  cursor: pointer;
+  color: #F16D7F;
+  fill: #F16D7F;
+}
+
+.filter__item {
+  background-color: #FFFFFF;
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.filter__item > ul > li {
+  list-style-type: none;
+  padding: 11px;
+}
+
+.filter__item > ul > li a {
   color: #6F6E6E;
+}
+
+.filter__item > summary {
+  list-style: none;
+  color: #F16D7F;
+  font-size: 14px;
+  line-height: 16px;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #ebebeb;
+  padding: 11px;
+}
+
+.filter__items {
+  cursor: pointer;
+  max-width: 327.5px;
+  width: 100%;
+  padding: 16px 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.sort {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort__list {
+  cursor: pointer;
+  margin-right: 28px;
+}
+
+.sort__heading {
+  list-style: none;
+}
+
+.sort__absolute {
+  position: absolute;
+  padding: 7px 40px 6px 11px;
+  z-index: 1;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.sort__absolute ul > li {
+  list-style-type: none;
 }
 
 .catalog__pages {

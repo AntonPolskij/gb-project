@@ -168,46 +168,83 @@ a {
 .products__catalog-page {
     margin-top: 0px;
 }
-.catalog__filters {
-    margin-top: 51px;
-    margin-bottom: 64px;
-    display: flex;
+
+.filtres {
     align-self: normal;
-}
-.catalog__sort {
     display: flex;
-    margin-left: 304px;
 }
-.catalog__filter__heading {
-    display: block;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
-.catalog__filter__heading::before {
-    margin-right: 12px;
-    content: "Filter";
-}
-.catalog__sort__heading {
-    display: block;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
+.filter {
+    position: relative;
+    margin: 51px 0 64px 18px;
+    max-width: 360px;
+    width: 100%;
+    &__heading {
+        list-style: none;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 600;
+    }
+    &__heading:hover {
+        cursor: pointer;
+        color: $main-color;
+        fill: $main-color;
+    }
+    &__item {
+        background-color: #FFFFFF;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+    &__item>ul>li {
+        list-style-type:none;
+        padding: 11px;
+        a {
+            color: #6F6E6E;
+        }
+    }
+    &__item>summary {
+        list-style: none;
+        color: $main-color;
+        font-size: 14px;
+        line-height: 16px;
+        border-left: 5px solid $main-color;
+        border-bottom: 1px solid #ebebeb;
+        padding: 11px;
+    }
+    &__items {
+        cursor: pointer;
+        max-width: 327.5px;
+        width: 100%;
+        padding: 16px 0;
+        position: absolute;
+        z-index: 1;
+        background-color: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
 }
 
-.catalog__sort__heading::after {
-    margin:0 10px 0 10px;
-    content: url("../img/sort-icon.svg");
+.sort {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__list {
+        cursor: pointer;
+        margin-right: 28px;
+    }
+    &__heading {
+        list-style: none;
+    }
+    &__absolute {
+        position: absolute;
+        padding: 7px 40px 6px 11px;
+        z-index: 1;
+        background-color: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        ul>li {
+            list-style-type: none;
+        }
+    }
 }
-
-.sort-size__list {
-    list-style: none;
-    font-size: 13px;
-    line-height: 16px;
-    color: #6F6E6E;
-}
-
 .catalog__pages {
     margin-top: 18px;
     border: 1px solid rgb(209, 209, 209);
