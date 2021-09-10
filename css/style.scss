@@ -357,3 +357,26 @@ a {
     fill: #FFFFFF;
     color: #FFFFFF;
 }
+@import "block/cart-cards";
+
+.cart-card {
+    margin-bottom: 40px;
+}
+
+.cart-button {
+    transition: all 0,5s;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 17px 40px;
+    background: none;
+    border: none;
+    border: 1px solid #A4A4A4;
+}
+.cart-button:hover {
+    transform: skew(5deg) translate(5px);
+}
+.cart-button:not(:last-child) {
+    margin-right: 192px;
+}
