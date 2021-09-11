@@ -144,6 +144,7 @@ a {
         color: $main-color;
     }
     }
+
 .catalog-menu {
         &__list {
             display: flex;
@@ -170,24 +171,31 @@ a {
 }
 
 .filtres {
+    position: relative;
     align-self: normal;
     display: flex;
 }
 .filter {
-    position: relative;
     margin: 51px 0 64px 18px;
     max-width: 360px;
     width: 100%;
+    &__list {
+        cursor: pointer;
+        padding-left: 13px;
+        padding-top: 13px;
+    }
+    &__list[open] {
+        fill:$main-color;
+        color: $main-color;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px #6F6E6E;
+        max-width: 327.5px;
+    }
     &__heading {
         list-style: none;
         font-size: 14px;
         line-height: 17px;
         font-weight: 600;
-    }
-    &__heading:hover {
-        cursor: pointer;
-        color: $main-color;
-        fill: $main-color;
     }
     &__item {
         background-color: #FFFFFF;
@@ -215,11 +223,12 @@ a {
         cursor: pointer;
         max-width: 327.5px;
         width: 100%;
-        padding: 16px 0;
+        padding: 16px;
         position: absolute;
+        left: 18px;
         z-index: 1;
         background-color: #FFFFFF;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        box-shadow: 0 10px 10px #6F6E6E;
     }
 }
 
@@ -359,12 +368,24 @@ a {
 }
 @import "block/cart-cards";
 
+.cart {
+    margin: 96px auto 128px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-cards{
+    flex-grow: 1;
+    max-width: 652px;
+}
 .cart-card {
     margin-bottom: 40px;
 }
-
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+}
 .cart-button {
-    transition: all 0,5s;
+    transition: 0.3s;
     cursor: pointer;
     font-weight: 300;
     font-size: 14px;
@@ -374,9 +395,89 @@ a {
     border: none;
     border: 1px solid #A4A4A4;
 }
+
 .cart-button:hover {
-    transform: skew(5deg) translate(5px);
+    transform: scale(1.15);
+    color: #FFFFFF;
+    background-color: $main-color;
 }
-.cart-button:not(:last-child) {
-    margin-right: 192px;
+
+.cart-forms {
+    flex-grow: 1;
+    max-width: 360px;
+}
+.cart-form {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    &__heading {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+    &__item {
+        margin-bottom: 20px;
+        padding: 20px 0 20px 17px;
+    }
+    &__button {
+        cursor: pointer;
+        max-width: 101px;
+        padding: 12px 15px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        background: none;
+        border: none;
+        border: 1px solid rgb(118, 118, 118);
+    }
+}
+.checkout {
+    max-width: 360px;
+    background-color: #F5F3F3;
+    hr {
+        color: #E2E2E2;
+        margin-bottom: 17px;
+    }
+    &__wrap {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__sub-price {
+        text-align: right;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 13px;
+    }
+    &__sub-price::after {
+        content: "$900";
+        margin-left: 25px;
+    }
+    &__total-price {
+        text-align: right;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 21px;
+    }
+    &__total-price::after {
+        content: "$900";
+        margin-left: 25px;
+        font-weight: 700;
+        color: $main-color;
+    }
+    &__button {
+        cursor: pointer;
+        padding: 15px 0;
+        background-color: $main-color;
+        border: none;
+        color: #FFFFFF;
+        transition: 0.3s;
+    }
+    &__button:hover {
+        transform: scale(1.15);
+    }
 }

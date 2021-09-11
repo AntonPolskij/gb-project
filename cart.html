@@ -63,7 +63,7 @@
                             <li>Price: <span>$300</span></li>
                             <li>Color: Red</li>
                             <li>Size: Xl</li>
-                            <li>Quantity: &emsp; <input min="0" type="number" name="quanity" id=""></li>
+                            <li>Quantity: &emsp; <input type="number" min="0" max="10" name="quanity" id=""></li>
                         </ul>
                         <img src="img/X.svg" alt="exit">
                     </div>
@@ -78,7 +78,7 @@
                             <li>Price: <span>$300</span></li>
                             <li>Color: Red</li>
                             <li>Size: Xl</li>
-                            <li>Quantity: &emsp; <input min="0" type="number" name="quanity" id=""></li>
+                            <li>Quantity: &emsp; <input type="number" min="0" max="10" name="quanity" id=""></li>
                         </ul>
                         <img src="img/X.svg" alt="exit">
                     </div>
@@ -92,7 +92,25 @@
                     </button>
                 </div>
             </div>
-            <div class="cart-form"></div>
+            <div class="cart-forms">
+                <form action="#">
+                    <fieldset class="cart-form">
+                        <legend class="cart-form__heading">SHIPPING ADRESS</legend>
+                        <input class="cart-form__item" type="text" placeholder="Country">
+                        <input class="cart-form__item" type="text" placeholder="State">
+                        <input class="cart-form__item" type="text" placeholder="Postcode &frasl; Zip">
+                        <input class="cart-form__button" type="submit" value="GET A QUOTE">
+                    </fieldset>
+                </form>
+                <form action="#" class="checkout">
+                    <div class="checkout__wrap">
+                        <p class="checkout__sub-price">SUB TOTAL</p>
+                        <p class="checkout__total-price">GRAND TOTAL</p>
+                        <hr>
+                        <button class="checkout__button">PROCEED TO CHECKOUT</button>
+                    </div>
+                </form>
+            </div>
 
         </section>
 

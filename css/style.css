@@ -598,6 +598,7 @@ a {
 }
 
 .filtres {
+  position: relative;
   -ms-flex-item-align: normal;
       align-self: normal;
   display: -webkit-box;
@@ -606,10 +607,24 @@ a {
 }
 
 .filter {
-  position: relative;
   margin: 51px 0 64px 18px;
   max-width: 360px;
   width: 100%;
+}
+
+.filter__list {
+  cursor: pointer;
+  padding-left: 13px;
+  padding-top: 13px;
+}
+
+.filter__list[open] {
+  fill: #F16D7F;
+  color: #F16D7F;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 10px #6F6E6E;
+          box-shadow: 0 0 10px #6F6E6E;
+  max-width: 327.5px;
 }
 
 .filter__heading {
@@ -617,12 +632,6 @@ a {
   font-size: 14px;
   line-height: 17px;
   font-weight: 600;
-}
-
-.filter__heading:hover {
-  cursor: pointer;
-  color: #F16D7F;
-  fill: #F16D7F;
 }
 
 .filter__item {
@@ -656,12 +665,13 @@ a {
   cursor: pointer;
   max-width: 327.5px;
   width: 100%;
-  padding: 16px 0;
+  padding: 16px;
   position: absolute;
+  left: 18px;
   z-index: 1;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 0 10px 10px #6F6E6E;
+          box-shadow: 0 10px 10px #6F6E6E;
 }
 
 .sort {
@@ -911,13 +921,39 @@ a {
   right: 22px;
 }
 
+.cart {
+  margin: 96px auto 128px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-cards {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 652px;
+}
+
 .cart-card {
   margin-bottom: 40px;
 }
 
+.cart-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .cart-button {
-  -webkit-transition: all 0,5s;
-  transition: all 0,5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
   font-weight: 300;
   font-size: 14px;
@@ -929,11 +965,116 @@ a {
 }
 
 .cart-button:hover {
-  -webkit-transform: skew(5deg) translate(5px);
-          transform: skew(5deg) translate(5px);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  color: #FFFFFF;
+  background-color: #F16D7F;
 }
 
-.cart-button:not(:last-child) {
-  margin-right: 192px;
+.cart-forms {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 360px;
+}
+
+.cart-form {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 55px;
+}
+
+.cart-form__heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.cart-form__item {
+  margin-bottom: 20px;
+  padding: 20px 0 20px 17px;
+}
+
+.cart-form__button {
+  cursor: pointer;
+  max-width: 101px;
+  padding: 12px 15px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  background: none;
+  border: none;
+  border: 1px solid #767676;
+}
+
+.checkout {
+  max-width: 360px;
+  background-color: #F5F3F3;
+}
+
+.checkout hr {
+  color: #E2E2E2;
+  margin-bottom: 17px;
+}
+
+.checkout__wrap {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkout__sub-price {
+  text-align: right;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 13px;
+}
+
+.checkout__sub-price::after {
+  content: "$900";
+  margin-left: 25px;
+}
+
+.checkout__total-price {
+  text-align: right;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 21px;
+}
+
+.checkout__total-price::after {
+  content: "$900";
+  margin-left: 25px;
+  font-weight: 700;
+  color: #F16D7F;
+}
+
+.checkout__button {
+  cursor: pointer;
+  padding: 15px 0;
+  background-color: #F16D7F;
+  border: none;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkout__button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 /*# sourceMappingURL=style.css.map */
