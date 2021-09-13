@@ -420,6 +420,10 @@ a {
     &__item {
         margin-bottom: 20px;
         padding: 20px 0 20px 17px;
+        transition: 0.7s;
+    }
+    &__item:focus {
+        transform: scale(1.15);
     }
     &__button {
         cursor: pointer;
@@ -431,6 +435,15 @@ a {
         background: none;
         border: none;
         border: 1px solid rgb(118, 118, 118);
+    }
+    &__button:hover {
+        animation: btn-shadow 1s 1 forwards;
+        @keyframes btn-shadow {
+            100% {
+                transform:translate(50px) scale(1.5);
+                box-shadow: -10px 10px 3px rgb(150, 147, 147);
+            }            
+        }
     }
 }
 .checkout {

@@ -535,6 +535,8 @@ a {
   width: 32px;
   height: 32px;
   color: #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .socials__link:hover {
@@ -1001,6 +1003,13 @@ a {
 .cart-form__item {
   margin-bottom: 20px;
   padding: 20px 0 20px 17px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.cart-form__item:focus {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .cart-form__button {
@@ -1013,6 +1022,29 @@ a {
   background: none;
   border: none;
   border: 1px solid #767676;
+}
+
+.cart-form__button:hover {
+  -webkit-animation: btn-shadow 1s 1 forwards;
+          animation: btn-shadow 1s 1 forwards;
+}
+
+@-webkit-keyframes btn-shadow {
+  100% {
+    -webkit-transform: translate(50px) scale(1.5);
+            transform: translate(50px) scale(1.5);
+    -webkit-box-shadow: -10px 10px 3px #969393;
+            box-shadow: -10px 10px 3px #969393;
+  }
+}
+
+@keyframes btn-shadow {
+  100% {
+    -webkit-transform: translate(50px) scale(1.5);
+            transform: translate(50px) scale(1.5);
+    -webkit-box-shadow: -10px 10px 3px #969393;
+            box-shadow: -10px 10px 3px #969393;
+  }
 }
 
 .checkout {
@@ -1123,6 +1155,13 @@ a {
 .registration .registration-form__text-input {
   width: 100%;
   padding: 13px 0 16px 17px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.registration .registration-form__text-input:focus {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .registration .registration-form__text-input:not(:last-child) {
@@ -1131,6 +1170,13 @@ a {
 
 .registration .registration-form__radio-input:not(:first-child) {
   margin-left: 20px;
+}
+
+.registration .registration-form__radio-input:checked {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 .registration .registration-form label {
@@ -1154,8 +1200,6 @@ a {
   border: none;
   fill: #FFFFFF;
   color: #FFFFFF;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .registration .registration-form__button svg {
@@ -1163,10 +1207,28 @@ a {
 }
 
 .registration .registration-form__button:hover {
-  color: #222222;
-  fill: #222222;
-  -webkit-transform: scale(1.15) translate(10px);
-          transform: scale(1.15) translate(10px);
+  -webkit-animation: radius-button 3s ease 1 forwards;
+          animation: radius-button 3s ease 1 forwards;
+}
+
+@-webkit-keyframes radius-button {
+  90% {
+    border-radius: 100px;
+  }
+  100% {
+    color: #000;
+    fill: #000;
+  }
+}
+
+@keyframes radius-button {
+  90% {
+    border-radius: 100px;
+  }
+  100% {
+    color: #000;
+    fill: #000;
+  }
 }
 
 .registration__info {

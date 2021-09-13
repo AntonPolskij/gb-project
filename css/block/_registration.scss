@@ -26,12 +26,20 @@
         &__text-input {
             width: 100%;
             padding: 13px 0 16px 17px;
+            transition: 0.7s;
+        }
+        &__text-input:focus {
+            transform: scale(1.15);
         }
         &__text-input:not(:last-child) {
             margin-bottom: 20px;
         }
         &__radio-input:not(:first-child) {
             margin-left: 20px;
+        }
+        &__radio-input:checked {
+            transition: 2s;
+            transform: rotateY(360deg);
         }
         label {
             font-weight: 300;
@@ -52,15 +60,21 @@
             border: none;
             fill: #FFFFFF;
             color: #FFFFFF;
-            transition: 0.3s;
             svg {
                 margin-left: 20px;
             }
         }
         &__button:hover {
-            color: #222222;
-            fill: #222222;
-            transform: scale(1.15) translate(10px);
+            animation: radius-button 3s ease 1 forwards;
+            @keyframes radius-button {
+            90% {
+                border-radius: 100px;
+            }
+            100% {
+                color: #000;
+                fill: #000;
+            }    
+            }
         }
     }
     &__info {
