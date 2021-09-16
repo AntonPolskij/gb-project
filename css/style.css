@@ -1333,4 +1333,77 @@ a {
   content: url(../../img/check.svg);
   margin-right: 22px;
 }
+
+.burger-menu {
+  margin-right: 33px;
+  position: relative;
+}
+
+.burger-menu svg {
+  cursor: pointer;
+}
+
+.burger-menu__check {
+  display: none;
+}
+
+.burger-menu__hidden {
+  position: absolute;
+  background-color: #fff;
+  padding: 100%;
+  top: 53px;
+  display: none;
+}
+
+.burger-menu__hidden > label {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.burger-menu__hidden > p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.burger-menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.burger-menu__item > summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+
+.burger-menu__item > ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.burger-menu__item > ul li {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 11px;
+}
+
+.burger-menu__item > ul li a {
+  color: #6F6E6E;
+}
+
+.burger-menu__check:checked ~ .burger-menu__hidden {
+  display: block;
+}
+
+.burger-menu__check:not(:checked) ~ .burger-menu__hidden {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
