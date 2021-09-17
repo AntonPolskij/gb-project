@@ -27,3 +27,15 @@
         color: #FBFBFB;
     }
 }
+@media (max-width: 1024px) {
+    .features {
+        padding-top: 48px;
+        padding-bottom: 64px;
+        &__wrap {
+            flex-direction: column;
+        }
+        &__card:not(:last-child) {
+            margin-bottom: 48px;
+        }
+    }
+}

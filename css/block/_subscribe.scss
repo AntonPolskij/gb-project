@@ -70,3 +70,17 @@
         line-height: 17px
     }
 }
+@media (max-width: 1024px) {
+    .subscribe {
+        &__wrap {
+            flex-direction: column;
+        }
+        &__one {
+            padding-top: 64px;
+            padding-bottom: 48px;
+        }
+    }
+    .subscribe-form {
+        padding-bottom: 140px;
+    }
+}

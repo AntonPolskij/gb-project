@@ -97,7 +97,7 @@
             li {
                 font-weight: 300;
                 font-size: 24px;
-                font-weight: 29px;
+                line-height: 29px;
             }
             li:not(:last-child){
                 margin-bottom: 16px;
@@ -106,6 +106,25 @@
                 content:url(../../img/check.svg);
                 margin-right: 22px;
             }
+        }
+    }
+}
+@media (max-width:1024px) {
+    .registration__info {
+        max-width: 354px;
+        h3 {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        ul li {
+            font-size: 16px;
+            font-weight: 19px;
         }
     }
 }

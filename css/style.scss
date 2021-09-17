@@ -52,7 +52,8 @@ a {
 .product__card {
     position: relative;
     background-color: #F8F8F8;
-    max-width: 360px;
+    width: 360px;
+    height: 581px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,12 +95,16 @@ a {
 }
 .card__hover {
     position: absolute;
-    padding: 185px 110px;
+    width: 360px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(58, 56, 56, 0.86);
     opacity: 0;
     transition: 0.5s;
 }
-.card__hover:hover {
+.product__card:hover .card__hover {
     opacity: 1;
 }
 .card__hover_btn {
@@ -138,9 +143,9 @@ a {
 
 .section-header {
     background-color: #F8F3F4;
+    padding-top: 66px;
+    padding-bottom: 66px;
     &__wrap {
-        padding-top: 66px;
-        padding-bottom: 66px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -386,7 +391,6 @@ a {
 }
 .cart-cards{
     flex-grow: 1;
-    max-width: 652px;
 }
 .cart-card {
     margin-bottom: 40px;
@@ -509,3 +513,73 @@ a {
 @import "block/registration";
 
 @import "block/burger-menu";
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .products {
+        margin-top: 155px;
+        &__text {
+            margin-bottom: 73px;
+        }
+        &__button {
+            margin-top: 32px;
+        }
+    }
+    .product__cards {
+        justify-content: center;
+    }
+    .product__card:nth-child(1) {
+        margin-bottom: 0px;
+    }
+    .product__card:nth-child(2) {
+        margin-bottom: 0px;
+    }
+    .product__card:nth-child(3) {
+        margin-bottom: 0px;
+    }
+    .product__card:nth-child(odd) {
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+    .product__card:nth-child(5) {
+        margin-bottom: 0px;
+    }
+    .products__catalog-page {
+        margin-top: 0px;
+        margin-bottom: 63px;
+    }
+    .filter {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    .catalog__pages {
+        margin-top: 40px;
+    }
+    .product__card__product-page:last-child {
+        display: none;
+    }
+    .cart {
+        margin-top: 59px;
+        flex-direction: column;
+    }
+    .cart-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    .cart-forms {
+        max-width: 100%;
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cart-form {
+        width: 360px;
+    }
+    .checkout {
+        flex-grow: 1;
+    }
+}   
