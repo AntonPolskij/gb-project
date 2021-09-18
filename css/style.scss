@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    ::-webkit-details-marker { display:none; }
 }
 .container {
     max-width: 1160px;
