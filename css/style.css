@@ -225,19 +225,19 @@ a {
 }
 
 .offer__item.man {
-  background-image: url(../../img/offer__man.jpg);
+  background-image: url(../img/offer__man.jpg);
 }
 
 .offer__item.woman {
-  background-image: url(../../img/offer__woman.jpg);
+  background-image: url(../img/offer__woman.jpg);
 }
 
 .offer__item.kids {
-  background-image: url(../../img/offer__kids.jpg);
+  background-image: url(../img/offer__kids.jpg);
 }
 
 .offer__item.accesories {
-  background-image: url(../../img/offer__accesories.jpg);
+  background-image: url(../img/offer__accesories.jpg);
 }
 
 @media (max-width: 380px) {
@@ -493,7 +493,7 @@ a {
 }
 
 .subscribe {
-  background-image: url(../../img/subscribe-bg.png);
+  background-image: url(../img/subscribe-bg.png);
   background-size: cover;
 }
 
