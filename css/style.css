@@ -1519,7 +1519,7 @@ a {
   position: absolute;
   background-color: #fff;
   overflow: scroll;
-  opacity: 0;
+  display: none;
   z-index: 10;
   width: 190px;
   height: 100vh;
@@ -1528,8 +1528,6 @@ a {
   padding-left: 33px;
   -webkit-box-shadow: 0 0 5px gray;
           box-shadow: 0 0 5px gray;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .burger-menu__hidden > label {
@@ -1577,11 +1575,11 @@ a {
 }
 
 .burger-menu__check:checked ~ .burger-menu__hidden {
-  opacity: 1;
+  display: block;
 }
 
 .burger-menu__check:not(:checked) ~ .burger-menu__hidden {
-  opacity: 0;
+  display: none;
 }
 
 @media (max-width: 1024px) {
