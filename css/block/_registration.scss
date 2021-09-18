@@ -128,3 +128,14 @@
         }
     }
 }
+@media (max-width:380px) {
+    .registration {
+        flex-direction: column;
+        &__info {
+            margin-top: 40px;
+        }
+        &__info ul>li {
+            display: flex;
+        }
+    }
+}

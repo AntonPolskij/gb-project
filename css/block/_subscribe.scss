@@ -84,3 +84,11 @@
         padding-bottom: 140px;
     }
 }
+@media (max-width: 380px) {
+    .subscribe {
+        &__two p {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}

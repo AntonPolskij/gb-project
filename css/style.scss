@@ -202,13 +202,16 @@ a {
         color: $main-color;
         background-color: #FFFFFF;
         box-shadow: 0 0 10px #6F6E6E;
-        max-width: 327.5px;
+        width: 327.5px;
     }
     &__heading {
         list-style: none;
         font-size: 14px;
         line-height: 17px;
         font-weight: 600;
+    }
+    &__heading img{
+        display: none;
     }
     &__item {
         background-color: #FFFFFF;
@@ -583,3 +586,101 @@ a {
         flex-grow: 1;
     }
 }   
+
+@media (max-width:380px) {
+    .products {
+        margin-top: 64px;
+    }
+    .product__card:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .section-header {
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            margin-bottom: 32px;
+        }
+    }
+    .filtres {
+        display: flex;
+        margin-bottom: 32px;
+    }
+    .filter {
+        margin: 0;
+        width: 20%;
+        &__list {
+            position: absolute;
+            bottom: 10px;
+            left: -10px;
+            z-index: 10;
+        }
+        &__heading div{
+            display: none;
+        }
+        &__heading img {
+            display: block;
+        }
+        &__items {
+            left: 0;
+        }
+    }
+    .sort {
+        flex-grow: 1;
+        &__heading {
+            display: flex;
+            font-size: 12px;
+            line-height: 14px;
+        } 
+    }
+    .product__slider__image {
+        width: 70%;
+    }
+    .product__card2__sort p{
+        display: flex;
+        font-size: 10px;
+    }
+    .cart {
+        margin-bottom: 96px;
+    }
+    .cart-card {
+        &__image {
+            width: 144px;
+        }
+        &__image img {
+            height: 100%;
+        }
+        &__info {
+            width: 214px;
+            flex-grow: 0;
+        }
+        &__info h3{
+            width: 150px;
+            padding-top: 16px;
+            padding-left: 16px;
+            font-size: 16px;
+        }
+        &__info ul {
+            padding-left: 16px;
+            padding-bottom: 32px;
+            margin-top: 26px;
+        }
+        &__info ul>li {
+            font-size: 14px;
+        }
+    }
+    .cart-buttons {
+        justify-content: space-between;
+    }
+    .cart-button {
+        font-size: 12px;
+        padding: 9px 18px;
+    }
+    .cart-forms {
+        flex-direction: column;
+    }
+    .checkout {
+        width: 100%;
+    }
+}
