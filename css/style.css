@@ -6,6 +6,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+* ::-webkit-details-marker {
+  display: none;
+}
+
 .container {
   max-width: 1160px;
   width: 100%;
@@ -105,7 +109,7 @@ a {
 }
 
 .intro__wrap {
-  background-image: url(../../img/man.png);
+  background-image: url(../img/man.png);
   background-repeat: no-repeat;
   background-position: -228px bottom;
   height: 100%;
@@ -144,7 +148,7 @@ a {
   color: #F16D7F;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .intro {
     height: 363px;
   }
@@ -240,7 +244,7 @@ a {
   background-image: url(../img/offer__accesories.jpg);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .offer__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -485,7 +489,7 @@ a {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .features {
     padding-top: 0;
     padding-bottom: 0;
@@ -642,7 +646,7 @@ a {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .subscribe__two p {
     font-size: 14px;
     line-height: 21px;
@@ -711,7 +715,7 @@ a {
   margin-right: 8px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .footer {
     padding-top: 43px;
   }
@@ -1482,7 +1486,7 @@ a {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .registration {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1666,7 +1670,7 @@ a {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .products {
     margin-top: 64px;
   }
