@@ -12,7 +12,7 @@
         margin-right: 41px;
         text-decoration: none;
     }
-    &__one a:last-child:hover {
+    &__one a:hover {
         opacity: 0.6;
     }
     &__two {
@@ -49,5 +49,8 @@
             line-height: 14px;
             font-weight: 400;
             }
+        }
+        .burger-menu:hover {
+            opacity: 0.6;
         }
 }

@@ -5,6 +5,15 @@
     font-family: 'Lato', sans-serif;
     ::-webkit-details-marker { display:none; }
 }
+// body {
+//     display: grid;
+//     grid-template-rows: min-content 1fr  min-content;
+// }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .container {
     max-width: 1160px;
     width: 100%;
@@ -76,6 +85,7 @@ a {
     padding-top: 25.35px;
     padding-bottom: 20px;
 }
+
 .product__card__heading {
     font-size: 13px;
     line-height: 16px;
@@ -304,6 +314,7 @@ a {
     border: none;
 }
 .slider__button:hover {
+    cursor: pointer;
     fill: #F16D7F;
 }
 .product__cards__product-page {
@@ -382,6 +393,7 @@ a {
     padding: 10px 50px 10px 25px
 }
 .product__card2__btn  button:hover {
+    cursor: pointer;
     background-color: #F16D7F;
     fill: #FFFFFF;
     color: #FFFFFF;

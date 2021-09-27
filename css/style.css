@@ -10,6 +10,19 @@
   display: none;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .container {
   max-width: 1160px;
   width: 100%;
@@ -47,7 +60,7 @@ a {
   text-decoration: none;
 }
 
-.header__one a:last-child:hover {
+.header__one a:hover {
   opacity: 0.6;
 }
 
@@ -101,6 +114,10 @@ a {
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
+}
+
+.header .burger-menu:hover {
+  opacity: 0.6;
 }
 
 .intro {
@@ -628,6 +645,14 @@ a {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 17px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.subscribe-form__button:hover {
+  color: #F16D7F;
+  background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -940,6 +965,7 @@ a {
 }
 
 .slider__button:hover {
+  cursor: pointer;
   fill: #F16D7F;
 }
 
@@ -1046,6 +1072,7 @@ a {
 }
 
 .product__card2__btn button:hover {
+  cursor: pointer;
   background-color: #F16D7F;
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -1402,6 +1429,7 @@ a {
 }
 
 .registration .registration-form__button:hover {
+  cursor: pointer;
   -webkit-animation: radius-button 3s ease 1 forwards;
           animation: radius-button 3s ease 1 forwards;
 }
