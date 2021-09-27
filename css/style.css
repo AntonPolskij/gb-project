@@ -1510,7 +1510,7 @@ a {
   }
   .registration__info ul li {
     font-size: 16px;
-    font-weight: 19px;
+    line-height: 19px;
   }
 }
 
@@ -1731,7 +1731,7 @@ a {
     left: -10px;
     z-index: 10;
   }
-  .filter__heading div {
+  .filter__heading span {
     display: none;
   }
   .filter__heading img {
